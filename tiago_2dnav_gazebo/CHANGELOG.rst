@@ -2,6 +2,31 @@
 Changelog for package tiago_2dnav_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.3.11 (2023-03-09)
+-------------------
+* Merge branch 'fix/removed-pointcloud-to-laserscan' into 'erbium-devel'
+  removed pointcloud to laser_scan
+  See merge request robots/tiago_simulation!113
+* removed pointcloud to laser_scan
+* Contributors: andreacapodacqua, antoniobrandi
+
+2.3.10 (2023-03-07)
+-------------------
+* Merge branch 'feat/stvl-obstacle-rgbd-layer' into 'erbium-devel'
+  added floor filters rgbd
+  See merge request robots/tiago_simulation!112
+* added check camera_model
+* added floor filters rgbd
+* Contributors: andreacapodacqua, sergiomoyano
+
+2.3.9 (2023-02-23)
+------------------
+* Merge branch 'feat/share-mmap' into 'erbium-devel'
+  deprecating map_configuration_server
+  See merge request robots/tiago_simulation!109
+* deprecating map_configuration_server
+* Contributors: antoniobrandi
+
 2.3.8 (2023-02-01)
 ------------------
 * Merge branch 'fix/missing-deps' into 'erbium-devel'

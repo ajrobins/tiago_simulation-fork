@@ -6,7 +6,7 @@
   <arg name="planner"           default="base"/>
   <arg name="global_planner"    default="global_planner"/>
   <arg name="local_planner"     default="pal"/>
-  <arg name="localization"      default="amcl"/>
+  <arg name="localization"      default="slam"/>
   <arg name="mapping"           default="karto"/>
   <arg name="public_sim"        default="false"/>
   <arg name="disable_vo"        default="false"/>

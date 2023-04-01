@@ -19,6 +19,7 @@
   <arg name="global_planner" default="global_planner"/>
   <arg name="local_planner"  default="$(eval 'teb' if (arg('public_sim') or arg('base_type')=='omni_base') else 'pal')"/>
   <arg name="mapping"        default="$(eval 'gmapping' if arg('public_sim') else 'karto')"/>
+  <arg name="map"            default="$(env HOME)/.pal/tiago_maps/configurations/$(arg world)"/>
 
   <arg name="rviz"     default="true"/>
   <arg name="gzclient" default="true"/>
@@ -53,6 +54,8 @@
     <include file="$(find tiago_2dnav_gazebo)/launch/navigation.launch">
       <arg name="state"          value="mapping"/>
       <arg name="mapping"        value="$(arg mapping)"/>
+      <arg name="map"            value="$(arg map)"/>
+
       <arg name="planner"        value="$(arg planner)"/>
       <arg name="global_planner" value="$(arg global_planner)"/>
       <arg name="local_planner"  value="$(arg local_planner)"/>
